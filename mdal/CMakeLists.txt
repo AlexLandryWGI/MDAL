@@ -109,9 +109,11 @@ ENDIF(GDAL_FOUND AND NETCDF_FOUND)
 IF(XML_FOUND)
   SET(MDAL_SOURCES ${MDAL_SOURCES}
     frmts/mdal_xml.cpp
+    frmts/mdal_landxml.cpp
   )
   SET(MDAL_HEADERS ${MDAL_HEADERS}
     frmts/mdal_xml.hpp
+    frmts/mdal_landxml.hpp
   )
 ENDIF(XML_FOUND)
 

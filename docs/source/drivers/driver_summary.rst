@@ -68,6 +68,11 @@
      - No
      - No
      - Built-in by default
+   * - :ref:`LandXML <driver.landxml>`
+     - TIN surfaces
+     - No
+     - No
+     - Built-in by default
    * - :ref:`Mike21 <driver.mike21>`
      - Text/plain file
      - No

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<LandXML xmlns="http://www.landxml.org/schema/LandXML-1.2" version="1.2">
+  <CoordinateSystem epsgCode="3007"/>
+  <Surfaces>
+    <Surface name="first">
+      <Definition surfType="TIN">
+        <Pnts>
+          <P id="5">2000 1000 10</P>
+          <P id="6">2000 1010 11</P>
+          <P id="8">2010 1010 12</P>
+          <P id="9">2010 1000 13</P>
+          <P id="12">2020 1005 14</P>
+        </Pnts>
+        <Faces>
+          <F>5 6 8</F>
+        </Faces>
+        <Faces>
+          <F>5 8 9</F>
+          <F i="1">9 8 12</F>
+        </Faces>
+      </Definition>
+    </Surface>
+  </Surfaces>
+  <Surfaces>
+    <Surface name="second surface">
+      <Definition surfType="TIN">
+        <Pnts>
+          <P id="1">0 0 1</P>
+          <P id="2">0 1 2</P>
+          <P id="3">1 1 3</P>
+        </Pnts>
+        <Faces>
+          <F>1 2 3</F>
+        </Faces>
+      </Definition>
+    </Surface>
+  </Surfaces>
+</LandXML>

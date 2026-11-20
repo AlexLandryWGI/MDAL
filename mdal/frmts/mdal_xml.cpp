@@ -185,6 +185,12 @@ size_t XMLFile::querySizeTAttribute( xmlNodePtr elem, const std::string &name ) 
   return val;
 }
 
+bool XMLFile::hasAttribute( xmlNodePtr node, const std::string &name ) const
+{
+  assert( node );
+  return xmlHasProp( node, XMLString( name ).get() ) != nullptr;
+}
+
 std::string XMLFile::attribute( xmlNodePtr node, const std::string &name ) const
 {
   std::string ret;

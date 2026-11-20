@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<LandXML xmlns="http://www.landxml.org/schema/LandXML-1.2" version="1.2">
+  <CoordinateSystem epsgCode="" ogcWktCode='LOCAL_CS["site",UNIT["metre",1]]'/>
+  <Surfaces>
+    <Surface name="wkt">
+      <Definition surfType="TIN">
+        <Pnts>
+          <P id="1">0 0 0</P>
+          <P id="2">0 1 0</P>
+          <P id="3">1 1 0</P>
+        </Pnts>
+        <Faces>
+          <F>1 2 3</F>
+        </Faces>
+      </Definition>
+    </Surface>
+  </Surfaces>
+</LandXML>

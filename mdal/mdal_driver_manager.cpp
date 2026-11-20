@@ -40,6 +40,10 @@
 #include "frmts/mdal_gdal_netcdf.hpp"
 #endif
 
+#ifdef HAVE_XML
+#include "frmts/mdal_landxml.hpp"
+#endif
+
 #if defined HAVE_HDF5 && defined HAVE_XML
 #include "frmts/mdal_xdmf.hpp"
 #endif
@@ -226,6 +230,10 @@ MDAL::DriverManager::DriverManager()
 
 #ifdef BUILD_PLY
   mDrivers.push_back( std::make_shared<MDAL::DriverPly>() );
+#endif
+
+#ifdef HAVE_XML
+  mDrivers.push_back( std::make_shared<MDAL::DriverLandXML>() );
 #endif
 
 #ifdef HAVE_HDF5

@@ -47,6 +47,9 @@ class XMLFile
     //! Checks strings are equal
     bool checkEqual( const xmlChar *xmlString, const std::string &str ) const;
 
+    //! Checks if attribute exists
+    bool hasAttribute( xmlNodePtr node, const std::string &name ) const;
+
     //! Gets string attribute
     std::string attribute( xmlNodePtr node, const std::string &name ) const;
 
